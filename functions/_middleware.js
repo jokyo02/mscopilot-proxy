@@ -363,7 +363,7 @@ if (resUrl.pathname === "/c/api/start") {
 //};
 async function websocketPorxy(request) {
   const reqUrl = new URL(request.url);
-  reqUrl.hostname = "mszs.pages.dev";
+  reqUrl.hostname = "sydney.bing.com";
   reqUrl.protocol = "https:";
   reqUrl.port = "";
   const headers = new Headers(request.headers);
