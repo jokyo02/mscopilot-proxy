@@ -363,12 +363,12 @@ if (resUrl.pathname === "/c/api/start") {
 //};
 async function websocketPorxy(request) {
   const reqUrl = new URL(request.url);
-  reqUrl.hostname = "prosydney.nbing.eu.org";
+  reqUrl.hostname = "mszs.pages.dev";
   reqUrl.protocol = "https:";
   reqUrl.port = "";
   const headers = new Headers(request.headers);
   if (headers.get("origin")) {
-    headers.set("origin", "https://www.bing.com");
+    headers.set("origin", "https://copilot.microsoft.com");
   }
   headers.append("X-forwarded-for", XForwardedForIP);
   return fetch(reqUrl, {
